@@ -3,6 +3,7 @@
     public enum EAnimal
     {
         Gato,
-        Cachorro
+        Cachorro,
+        Desconhecido
     }
 }

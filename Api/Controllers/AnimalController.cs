@@ -19,7 +19,9 @@ namespace Api.Controllers
         [HttpGet("emitirSom/{animalNome}")]
         public ActionResult<string> Get(string animalNome)
         {
-            Enum.TryParse(animalNome, out EAnimal eAnimal);
+            var foi = Enum.TryParse(animalNome, out EAnimal eAnimal);
+
+            if (!foi) eAnimal = EAnimal.Desconhecido;
 
             return animal.EmitirSom(eAnimal); 
         }

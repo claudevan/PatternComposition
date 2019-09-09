@@ -40,16 +40,6 @@ namespace Api
                         default:
                             return serviceProvider.GetService<DefaultAnimal>();
                     }
-
-                    //switch (key)
-                    //{
-                    //    case "Cachorro":
-                    //        return serviceProvider.GetService<Cachorro>();
-                    //    case "Gato":
-                    //        return serviceProvider.GetService<Gato>();
-                    //    default:
-                    //        return serviceProvider.GetService<Gato>();
-                    //}
                 });
 
         }
